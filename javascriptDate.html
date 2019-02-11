@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Javascript Dates</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+
+        <script>
+            function update() {
+                var dateInObj = document.getElementById("dateIn");
+                var dateOutObj = document.getElementById("dateOut");
+                var msOutObj = document.getElementById("msOut");
+
+                var date = new Date(dateInObj.value);
+
+                // Add the time zone offset minutes to the date
+    //          date.setMinutes( date.getMinutes() + date.getTimezoneOffset() );
+
+                // Parse the string and use Date( YYYY, MM, DD ) constructor 
+    //          var dataParts = dateInObj.value.split("-");
+    //          var date = new Date( dataParts[0], dataParts[1], dataParts[2]);
+
+                // Use moment.js to parse the date as a local date
+    //          date = moment(dateInObj.value);
+    
+
+                dateOutObj.innerHTML = date.toString();
+                msOutObj.innerHTML = date.getTime()
+
+
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container" style="padding: 40px 40px;">
+            <h2>Javascript Dates</h2>
+            <div class="row">
+                <div class="col">
+
+                    <lable>Date In:</lable>
+                    <input class="form-control" type="text" id="dateIn" spellcheck="false" value="2019-01-01">
+                    <button class="btn btn-primary btn-sm" style="margin-top: 10px;" onclick="update()">submit</button>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 100px;">
+                <div class="col">
+
+                    <label>Date Out:</label>
+                    <h4 id="dateOut"></h4>
+                    
+                </div>
+            </div>
+            <div class="row" style="padding-top: 100px;">
+                <div class="col">
+
+                    <label>Milliseconds Out:</label>
+                    <h4 id="msOut"></h4>
+                    
+                </div>
+            </div>            
+    </body>
+
+</html>
