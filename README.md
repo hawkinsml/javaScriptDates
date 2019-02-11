@@ -4,4 +4,7 @@ Sample HTML and JavaScript code for 'JavaScript Date Object and Time Zones' YouT
 
 See my YouTube video for more information.
 
-[![JavaScript Date Object and Time Zones](https://img.youtube.com/vi/oXsjY8GX6Cg/0.jpg)](https://www.youtube.com/watch?v=oXsjY8GX6Cg "JavaScript Date Object and Time Zones")
+[![JavaScript Date Object and Time Zones](https://img.youtube.com/vi/oKFb2Us9kmg/0.jpg)](https://www.youtube.com/watch?v=oKFb2Us9kmg "JavaScript Date Object and Time Zones")
+
+
+
